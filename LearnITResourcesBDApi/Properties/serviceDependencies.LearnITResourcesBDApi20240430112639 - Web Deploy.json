@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/LearnITResourcesBDApiapi/apis/LearnITResourcesBDApi",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/LearnITResourcesBDApi20240430112639/providers/Microsoft.ServiceLinker/linkers/WebhookConnection_BCE980627E",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/learnitresourcesbdapidbserver/databases/LearnITResourcesBDApi_db",
+      "type": "mssql.azure",
+      "connectionId": "WebhookConnection",
+      "dynamicId": null
+    },
+    "storage1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/LearnITResourcesBDApi20240430112639/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsQueueConnection_D93BFC03BA, /subscriptions/c78b50fb-2ec0-4819-a14f-2d761da664b7/resourcegroups/rg_bdscraper/providers/Microsoft.Web/sites/LearnITResourcesBDApi20240430112639/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsQueueConnection_48B47DCB32",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/bdscraperstorage",
+      "type": "storage.azure",
+      "connectionId": "ConnectionStrings:QueueConnection",
+      "dynamicId": null
+    }
+  }
+}
